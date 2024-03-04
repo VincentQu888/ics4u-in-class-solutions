@@ -1,6 +1,15 @@
 #Vincent Qu, 341089043
 
 def ceaser_cypher(word, shift):
+    ''' function encrypts word by shifting each character by that number of positions in the alphabet
+    
+    Args:
+        word: the word to be encrypted, string
+        shift: the number of positions to shift each letter by, works with negative numbers
+    
+    Returns:
+        a string representing the encrypted ceaser cypher of the original word and shift values
+    '''
     cypher = []
     ans = []
     for i in range(2):
@@ -9,6 +18,7 @@ def ceaser_cypher(word, shift):
 
     for char in word:
         ans.append(cypher[ord(char) - ord('a') + shift])
+
     return "".join(ans)
 
 
