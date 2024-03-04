@@ -12,4 +12,3 @@ for i in range(2):
 
 for char in word:
     print((cypher[ord(char) - ord('a') + shift]), end = "")
-
